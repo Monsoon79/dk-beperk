@@ -834,9 +834,28 @@ footer {
 
       <div>
         <h1 class="hero-title reveal">
-          The Anatomy<br>of <em>Complexity</em>
-        </h1>
+  <span class="title-line title-line-1">The Anatomy</span>
+  <span class="title-line title-line-2"><small>of</small> <em>Complexity</em></span>
+</h1>
 
+.hero-title .title-line {
+  display: block;
+}
+
+.hero-title .title-line-2 {
+  transform: translateX(-45px);
+}
+
+.hero-title .title-line-2 small {
+  font-size: 0.55em;
+  font-weight: 400;
+  vertical-align: baseline;
+}
+
+.hero-title .title-line-2 em {
+  font-size: 0.82em;
+}
+        
         <div class="hero-bottom reveal">
 
                     <div class="hero-pillar">
