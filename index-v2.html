@@ -238,20 +238,41 @@ header {
 }
 
 .legal-glyph {
-  width: 12px;
+  width: 48px;
   height: 100%;
-  min-height: 3.3em;
+  min-height: 4.9em;
   overflow: visible;
+  display: block;
+  position: relative;
+  z-index: 0;
 }
 
-.legal-glyph path {
+.legal-glyph .glass {
   fill: none;
-  stroke: var(--red);
+  stroke: var(--metal);
   stroke-width: 1;
-  opacity: .38;
+  opacity: .32;
   vector-effect: non-scaling-stroke;
 }
 
+.legal-glyph .glass-red {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 1.4;
+  opacity: .55;
+  vector-effect: non-scaling-stroke;
+}
+
+.legal-glyph .figure {
+  fill: var(--red);
+  opacity: .48;
+}
+
+.legal-glyph .figure-silver {
+  fill: var(--metal-light);
+  opacity: .42;
+}
+  
 .legal-points {
   line-height: 1.65;
 }
