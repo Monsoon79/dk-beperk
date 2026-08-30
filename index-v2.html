@@ -222,6 +222,17 @@ header {
   letter-spacing: -.01em;
 }
 
+.pillar-copy .marker {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--red);
+  border-right-color: transparent;
+  border-radius: 50%;
+  margin-right: 9px;
+  transform: translateY(1px);
+}
+
 .section {
   padding: 150px 0;
   border-top: 1px solid var(--line);
@@ -757,9 +768,9 @@ footer {
             <div class="pillar-number mono">01 — Legal</div>
           <div class="pillar-title">Rights ·<br>Authority ·<br>Exposure</div>
             <div class="pillar-copy">
-  The legal architecture governing what you can do,<br>
-  what you are authorised to do, and<br>
-  the consequences when you get it wrong.
+  <span class="marker"></span>The legal architecture governing what you can do,<br>
+  <span class="marker"></span>what you are authorised to do, and<br>
+  <span class="marker"></span>the consequences when you get it wrong.
 </div>
           </div>
 
