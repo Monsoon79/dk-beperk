@@ -183,6 +183,23 @@ header {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
   border-top: 1px solid var(--line);
+  width: 100%;
+  align-items: start;
+}
+
+.hero-pillar {
+  padding: 23px 25px 5px 0;
+  border-right: 1px solid var(--line);
+  min-width: 0;
+  width: 100%;
+}
+
+.hero-pillar:not(:first-child) {
+  padding-left: 25px;
+}
+
+.hero-pillar:last-child {
+  border-right: 0;
 }
   
 .hero-pillar {
@@ -638,7 +655,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .container {
+  .container {  
     width: min(calc(100% - 36px), var(--max));
   }
 
@@ -661,9 +678,9 @@ footer {
     font-size: clamp(58px, 15vw, 110px);
   }
 
-  .hero-bottom {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.hero-bottom {
+  grid-template-columns: 1fr;
+}
 
   .hero-pillar,
   .hero-pillar:not(:first-child) {
